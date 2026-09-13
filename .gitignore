@@ -1,0 +1,100 @@
+# ─────────────────────────────────────────────
+#  Claude / herramientas de IA
+# ─────────────────────────────────────────────
+.claude/
+.claude.json
+CLAUDE.md
+CLAUDE.local.md
+.mcp.json
+
+# Otros asistentes, por si acaso
+.cursor/
+.cursorrules
+.windsurf/
+.aider*
+.github/copilot-instructions.md
+
+# ─────────────────────────────────────────────
+#  Gradle
+# ─────────────────────────────────────────────
+.gradle/
+build/
+captures/
+.kotlin/
+
+# El wrapper SÍ se versiona — sin esto el repo no compila en otra máquina
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
+
+# ─────────────────────────────────────────────
+#  Android Studio / IntelliJ
+# ─────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+local.properties
+
+# ─────────────────────────────────────────────
+#  Android
+# ─────────────────────────────────────────────
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+release/
+
+# ─────────────────────────────────────────────
+#  Xcode / iOS
+# ─────────────────────────────────────────────
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# ─────────────────────────────────────────────
+#  Swift Package Manager
+# ─────────────────────────────────────────────
+.swiftpm/
+.build/
+
+# ─────────────────────────────────────────────
+#  CocoaPods (no se usa en este proyecto)
+# ─────────────────────────────────────────────
+Pods/
+*.xcworkspace
+
+# ─────────────────────────────────────────────
+#  Kotlin/Native
+# ─────────────────────────────────────────────
+konan/
+.konan/
+
+# ─────────────────────────────────────────────
+#  macOS
+# ─────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ─────────────────────────────────────────────
+#  Logs, temporales y secretos
+# ─────────────────────────────────────────────
+*.log
+*.hprof
+.env
+.env.local
+*.keystore
+*.jks
