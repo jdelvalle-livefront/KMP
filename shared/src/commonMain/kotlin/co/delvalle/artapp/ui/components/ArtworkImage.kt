@@ -13,7 +13,12 @@ import androidx.compose.ui.text.style.TextAlign
 import coil3.compose.SubcomposeAsyncImage
 
 @Composable
-fun ArtworkImage(imageUrl: String?, contentDescription: String?, modifier: Modifier = Modifier) {
+fun ArtworkImage(
+    imageUrl: String?,
+    contentDescription: String?,
+    modifier: Modifier = Modifier,
+    contentScale: ContentScale = ContentScale.Crop,
+) {
     if (imageUrl == null) {
         ImagePlaceholder(modifier = modifier, message = "No image")
         return
@@ -23,7 +28,7 @@ fun ArtworkImage(imageUrl: String?, contentDescription: String?, modifier: Modif
         model = imageUrl,
         contentDescription = contentDescription,
         modifier = modifier.fillMaxSize(),
-        contentScale = ContentScale.Crop,
+        contentScale = contentScale,
         loading = { Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surfaceVariant)) },
         error = { ImagePlaceholder(modifier = Modifier.fillMaxSize(), message = "Unable to load image") },
     )
