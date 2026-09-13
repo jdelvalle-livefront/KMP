@@ -16,6 +16,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import co.delvalle.artapp.domain.model.ArtworkDetail
@@ -61,6 +62,7 @@ private fun DetailContent(artwork: ArtworkDetail, modifier: Modifier = Modifier)
             imageUrl = artwork.imageUrl,
             contentDescription = artwork.title,
             modifier = Modifier.fillMaxWidth().aspectRatio(4f / 3f),
+            contentScale = ContentScale.Fit,
         )
         Column(modifier = Modifier.padding(16.dp)) {
             Text(text = artwork.title, style = MaterialTheme.typography.headlineSmall)
